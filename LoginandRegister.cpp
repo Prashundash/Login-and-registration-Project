@@ -11,14 +11,14 @@ void forgot();
 main()
 {
         int choice;
-        cout<<"***********************************************************************\n\n\n";
+        cout<<"-----------------------------------------------------------------------\n\n\n";
         cout<<"                      Welcome to login page                               \n\n";
-        cout<<"*******************        MENU        *******************************\n\n";
+        cout<<"------------------------        MENU        --------------------------------\n\n";
         cout<<"1.LOGIN"<<endl;
         cout<<"2.REGISTER"<<endl;
         cout<<"3.FORGOT PASSWORD (or) USERNAME"<<endl;
         cout<<"4.Exit"<<endl;
-        cout<<"\nEnter your choice :";
+        cout<<"\nEnter your choice USER:";
         cin>>choice;
         cout<<endl;
         switch(choice)
@@ -34,7 +34,7 @@ main()
                         break;
                 case 4:
 
-                        cout<<"Thanks for using this program\nThis program is created by @harsha20599\n\n";
+                        cout<<"Thanks for using this program\nThis program is created by @PrashunDash\n\n";
                         break;
                 default:
                         system("cls");
@@ -93,7 +93,7 @@ void registr()
         ofstream reg("database.txt",ios::app);
         reg<<reguser<<' '<<regpass<<endl;
         system("cls");
-        cout<<"\nRegistration Sucessful\n";
+        cout<<"\nRegistration Sucessful!\n";
         main();
 
 
